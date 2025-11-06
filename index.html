@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dragon System — Criação de Sites Profissionais</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="#hero" class="logo" aria-label="Dragon System — Início">
+        <!-- Minimal pitaya SVG -->
+        <svg class="logo-mark" width="44" height="44" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="g1" x1="0" x2="1">
+              <stop offset="0" stop-color="#FF2D86"/>
+              <stop offset="1" stop-color="#7C00FF"/>
+            </linearGradient>
+          </defs>
+          <rect x="6" y="10" width="52" height="44" rx="12" fill="url(#g1)" />
+          <path d="M20 20c4 1 6 4 8 7s4 7 8 6c3-1 6-5 6-5s-1 8-8 12c-7 4-18 2-24-3-6-5-6-13-2-17 3-3 6-2 12-0.5z" fill="#fff" opacity="0.08"/>
+          <circle cx="28" cy="30" r="2.2" fill="#A6FF4D"/>
+          <circle cx="36" cy="24" r="1.8" fill="#A6FF4D"/>
+        </svg>
+        <span class="logo-text">Dragon System</span>
+      </a>
+      <nav class="nav" role="navigation" aria-label="Menu principal">
+        <a href="#hero">Início</a>
+        <a href="#about">Sobre Nós</a>
+        <a href="#form" class="cta header-cta">Comece Seu Projeto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Seu Negócio, Próximo Nível Digital.</h1>
+          <p class="lead">Criação de sites profissionais para Barbeiros, Comerciantes e Restaurantes. Impulsione suas vendas com o Dragon System.</p>
+          <div class="hero-ctas">
+            <a href="#form" class="btn primary">Comece Seu Projeto Agora</a>
+            <a href="#about" class="btn ghost">Saiba Mais</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="device-mock">
+            <div class="screen">
+              <div class="mock-header"></div>
+              <div class="mock-body">
+                <div class="mock-line short"></div>
+                <div class="mock-line"></div>
+                <div class="mock-line long"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container about-grid">
+        <div class="about-text">
+          <h2>Sobre Nós</h2>
+          <p class="muted">Nossa missão é impulsionar pequenos negócios locais com soluções digitais de alto impacto — sites rápidos, com identidade forte e foco em conversão. Acreditamos que cada barbearia, comércio ou restaurante merece uma presença online que conte sua história e gere resultados.</p>
+          <p class="muted">Visão: tornar-se a referência regional em criação web para pequenos empreendedores, com design humano, tecnologia leve e entrega rápida.</p>
+        </div>
+        <div class="about-visual" aria-hidden="true">
+          <div class="glass-card">
+            <svg width="120" height="120" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="32" r="30" fill="url(#g1)" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="form" class="contact">
+      <div class="container form-wrap">
+        <h2>Dê o Primeiro Passo: Conte-nos Sobre Seu Projeto.</h2>
+        <form id="projectForm" class="project-form" novalidate>
+          <div class="grid">
+            <div class="field">
+              <label for="name">Nome</label>
+              <input id="name" name="name" type="text" placeholder="Seu nome" required>
+            </div>
+            <div class="field">
+              <label for="email">E-mail</label>
+              <input id="email" name="email" type="email" placeholder="seu@exemplo.com" required>
+            </div>
+            <div class="field">
+              <label for="type">Tipo de Negócio</label>
+              <select id="type" name="type" required>
+                <option value="">Selecione...</option>
+                <option>Barbearia</option>
+                <option>Comércio</option>
+                <option>Restaurante</option>
+                <option>Outro</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="description">Descrição do Projeto</label>
+              <textarea id="description" name="description" rows="6" placeholder="Descreva seu projeto com detalhes..." required></textarea>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn submit">Lançar Meu Projeto</button>
+            <div id="formMessage" class="form-message" aria-live="polite"></div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2025 Dragon System — Todos os direitos reservados.</p>
+      <p class="small muted">Feito com pitaya, tipografia de qualidade e atenção a detalhes.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
